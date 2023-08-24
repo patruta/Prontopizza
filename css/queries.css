@@ -133,10 +133,12 @@
 
 /*BELOW 704px(Small tablets)*/
 @media (max-width: 44em) {
-  .grid--3-cols,
   .grid--4-cols {
     grid-template-columns: repeat(2, 1fr);
   }
+  /* .grid--3-cols{
+
+  } */
   .heading-secondary {
     margin-bottom: 4.8rem;
   }
@@ -152,9 +154,11 @@
   }
 
   .grid--2-cols,
-  .grid--3-cols,
   .grid--4-cols {
     grid-template-columns: 1fr;
+  }
+  .grid--3-cols {
+    grid-template-columns: repeat(2, 1fr);
   }
   .btn,
   .btn:link,
